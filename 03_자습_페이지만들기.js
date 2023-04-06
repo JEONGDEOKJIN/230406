@@ -47,14 +47,14 @@ function Drawer(elem, open = false) {
 
 // open 메소드 추가
     // 왜 prototype 을 사용해서 open 메소드를 추가? 
-    // 우선, Drawer 만들 때, 바로 넣었어도 되는 것 아닌가? 
+    // 우선, Drawer 만들 때, 바로 넣었어도 되는 것 아닌가? ❓❓❓❓❓ 
 Drawer.prototype.open = function() {
     this.isOpen = true;
     this.elem.style.transform = "translate(0)";
 }
 
 // close 메소드 추가
-    // close 인데, 왜 translaste 500px 해야 하는 거지?
+    // close 인데, 왜 translaste 500px 해야 하는 거지? ❓❓❓❓❓❓❓ 
 Drawer.prototype.close = function() {
     this.isOpen = false;
     this.elem.style.transform = "translate(500px)";
